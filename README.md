@@ -1,4 +1,4 @@
-# 抽奖大转盘 0
+# 抽奖大转盘
 
 [预览地址](https://stackblitz.com/edit/react-ts-59bqrb)
 
