@@ -1,0 +1,54 @@
+.lucky-div-wrap {
+  width: 320px;
+  height: 320px;
+  text-align: center;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 4px 4px 34px rgba(0, 0, 0, 0.15);
+  position: relative;
+  // 扇形布局核心样式
+  .pie {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(0deg);
+    .slice {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 50%;
+      transform-origin: 0% 100%;
+      text-align: left;
+      display: flex;
+      .content {
+        transform-origin: 0% 100%;
+        transform: skewY(45deg) rotate(-45deg);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        text-align: right;
+        padding-right: 15px;
+        box-sizing: border-box;
+        font-weight: bolder;
+      }
+    }
+  }
+  .arrow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+  }
+}
+.opt-btn {
+  text-align: center;
+  margin: 40px 0;
+  .start {
+    margin-right: 30px;
+  }
+}
